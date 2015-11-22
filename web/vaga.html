@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<!--
+    Aerial by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Crawler Jobs</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <script type="text/javascript" src="assets/js/processing/processing.js"></script>
+        <script type="text/javascript" src="assets/js/jquery/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/js/slider.js"></script>
+    </head>
+    <body class="loading">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
+
+                <!-- Header -->
+                <header id="header">
+                    <h1>Designer Digital</h1>
+                </header>
+
+                <img id="slideLeft" src="assets/css/images/bt_esq.png" alt="esq">
+                <img id="slideRight" src="assets/css/images/bt_dir.png" alt="dir">
+
+                <div id="visualizacoesDiv">
+                    <div class="visu" id="mapDiv">
+                        <p id="tituloMedia">Vagas por Região</p>
+
+                        <img id="imgMapa" src="assets/pde/mapa/mapaBrasil.png" alt="mapaBrasil" >
+                        <canvas id="mapaCanvas" data-processing-sources="assets/pde/mapa/mapa.pde"></canvas>
+                        <script>
+                            var total = 0;
+                            var estadosArray = new Array;
+                            var canvasSizeMap;
+                            var quantMax = -1;
+                            var quantMin = 10000;
+
+                            var Estados = {
+                                totalVagas: -1,
+                                mediaVagas: -1,
+                                totSal: -1,
+                                arrayEstado: new Array,
+                                setParams: function() {
+                                    var totVagas = 0;
+                                    var totSal = 0;
+
+                                    for (var i = 0; i < 27; i++) {
+                                        totVagas += this.arrayEstado[i].getTotalVagas();
+                                        totSal += this.arrayEstado[i].getTotSal();
+                                    }
+
+                                    var media = totSal / totVagas;
+
+                                    this.totalVagas = totVagas;
+                                    this.totSal = totSal;
+                                    this.mediaVagas = media.toFixed(2);
+                                },
+                                addEstado: function(estado) {
+                                    this.arrayEstado.push(estado);
+                                },
+                                getTotalVagas: function() {
+                                    return this.totalVagas;
+                                },
+                                getMediaVagas: function() {
+                                    return this.mediaVagas;
+                                },
+                                getEstadoByPosition: function(pos) {
+                                    return this.arrayEstado[pos];
+                                }
+                            };
+
+                            $(document).ready(function () {
+                                canvasSizeMap = $("#imgMapa").width();
+
+                                $(window).resize(function () {
+                                    canvasSizeMap = $("#imgMapa").width();
+                                });
+                            });
+
+                            estadosArray.push("Acre");
+                            estadosArray.push("Alagoas");
+                            estadosArray.push("Amapá");
+                            estadosArray.push("Amazonas");
+                            estadosArray.push("Bahia");
+                            estadosArray.push("Ceará");
+                            estadosArray.push("Distrito Federal");
+                            estadosArray.push("Espírito Santo");
+                            estadosArray.push("Goiás");
+                            estadosArray.push("Maranhão");
+                            estadosArray.push("Mato Grosso");
+                            estadosArray.push("Mato Grosso do Sul");
+                            estadosArray.push("Minas Gerais");
+                            estadosArray.push("Pará");
+                            estadosArray.push("Paraíba");
+                            estadosArray.push("Paraná");
+                            estadosArray.push("Pernambuco");
+                            estadosArray.push("Piauí");
+                            estadosArray.push("Rio de Janeiro");
+                            estadosArray.push("Rio Grande do Norte");
+                            estadosArray.push("Rio Grande do Sul");
+                            estadosArray.push("Rondônia");
+                            estadosArray.push("Roraima");
+                            estadosArray.push("Santa Catarina");
+                            estadosArray.push("São Paulo");
+                            estadosArray.push("Sergipe");
+                            estadosArray.push("Tocantins");
+
+                            var abreEstado = function(id, populacao, estado) {
+                                $("#tituloEstado").text(estado);
+                                document.getElementById("estadoQuantVagas").innerHTML = "Quantidade de Vagas: <spam class='dorange'>" + Estados.getEstadoByPosition(id).getTotalVagas() + "</spam>";
+                                document.getElementById("estadoPopulacao").innerHTML = "População: <spam class='dorange'>" + populacao + "</spam>";
+                                $("#linkEstado p").text("Ver profissões em " + estado);
+                            };
+
+                            for (var i = 0; i < 27; i++) {
+                                var aux = Math.floor((Math.random() * 5) + 10);
+
+                                var novoEstado = {
+                                    totalVagas: -1,
+                                    mediaVagas: -1,
+                                    totSal: -1,
+                                    arrayVagas: new Array,
+                                    setParams: function() {
+                                        var totSal = 0;
+                                        var totVagas = 0;
+                                        var media;
+                                        var i;
+
+                                        for (i = 0; i < this.arrayVagas.length; i++) {
+                                            totVagas += this.arrayVagas[i].getQuantidade();
+                                            totSal += this.arrayVagas[i].getSalario() * this.arrayVagas[i].getQuantidade();
+                                        }
+
+                                        media = totSal / totVagas;
+
+                                        this.totalVagas = totVagas;
+                                        this.totSal = totSal;
+                                        this.mediaVagas = media.toFixed(2);
+                                    },
+                                    addVaga: function(vaga) {
+                                      this.arrayVagas.push(vaga);
+                                    },
+                                    getTotalVagas: function() {
+                                        return this.totalVagas;
+                                    },
+                                    getMediaVagas: function() {
+                                        return this.mediaVagas;
+                                    },
+                                    getTotSal: function() {
+                                        return this.totSal;
+                                    }
+                                };
+
+                                for (var j = 0; j < aux; j++) {
+                                    var salario = Math.floor((Math.random() * 9000) + 1000);
+                                    var quantidade = Math.floor((Math.random() * 14) + 1);
+
+                                    var vaga = {
+                                        salario: salario,
+                                        quantidade: quantidade,
+                                        getSalario: function() {
+                                            return this.salario;
+                                        },
+                                        getQuantidade: function() {
+                                            return this.quantidade;
+                                        }
+                                    };
+
+                                    novoEstado.addVaga(vaga);
+                                }
+
+                                novoEstado.setParams();
+                                var q = novoEstado.getTotalVagas();
+
+                                if (q > quantMax) {
+                                    quantMax = q;
+                                }
+                                if (q < quantMin) {
+                                    quantMin = q;
+                                }
+
+                                Estados.addEstado(novoEstado);
+                            }
+
+                            Estados.setParams();
+                            total = Estados.getTotalVagas();
+                        </script>
+
+                        <div id="infoEstado">
+                            <h1 id="tituloEstado">Escolha um Estado</h1>
+                            <p id="estadoQuantVagas"></p>
+                            <p id="estadoPopulacao"></p>
+                            <a id="linkEstado" href="#"><p></p></a>
+                        </div>
+                    </div>
+
+                    <div class="visu" id="pizzaDiv">
+                        <p id="tituloMedia">Porcentagem por Estado</p>
+
+                        <div id="infoPizzaEsq">
+                            <h1 id="tituloEstadoPizza">Escolha um Estado</h1>
+                            <p id="estadoPorcentagem"></p>
+                            <p id="estadoQuantVagasPizza"></p>
+                        </div>
+                        <canvas id="pizzaCanvas" data-processing-sources="assets/pde/pizza/pizza.pde"></canvas>
+                        <script>
+                            var canvasSizePizza = 400;
+
+                            var abreEstadoP = function(estado, id) {
+                                var q = Estados.getEstadoByPosition(id).getTotalVagas();
+                                $("#tituloEstadoPizza").text(estado);
+                                document.getElementById("estadoQuantVagasPizza").innerHTML = "Quantidade de Vagas: <spam class='dorange'>" + q + "</spam>";
+
+                                var percent = q / total * 100;
+                                document.getElementById("estadoPorcentagem").innerHTML = "Porcentagem do Total: <spam class='dorange'>" + percent.toFixed(1) + "%</spam>";
+
+                                $("#listaEstados li").removeClass("dorange");
+                                $("#listaEstados li:eq(" + id + ")").addClass("dorange");
+                            };
+
+                            var pizzaInstance;
+
+                            function setSelected(id) {
+                                if (!pizzaInstance) {
+                                    pizzaInstance = Processing.getInstanceById("pizzaCanvas");
+                                }
+
+                                pizzaInstance.setSelectedExt(id);
+                            }
+
+                            $(document).ready(function() {
+                                document.getElementById("totalVagas").innerHTML = "Total de vagas no Brasil: <spam class='orange'>" + total + "</spam>";
+                                var media = total / 27;
+                                document.getElementById("mediaEstados").innerHTML = "Média por estado: <spam class='orange'>" + media.toFixed(1) + "</spam>";
+
+                                $("#listaEstados li").click(function() {
+                                    var i = $("#listaEstados li").index(this);
+
+                                    abreEstadoP(estadosArray[i], i);
+                                    setSelected(i);
+                                });
+                            });
+                        </script>
+                        <ul id="listaEstados">
+                            <li>AC</li>
+                            <li>AL</li>
+                            <li>AP</li>
+                            <li>AM</li>
+                            <li>BA</li>
+                            <li>CE</li>
+                            <li>DF</li>
+                            <li>ES</li>
+                            <li>GO</li>
+                            <li>MA</li>
+                            <li>MT</li>
+                            <li>MS</li>
+                            <li>MG</li>
+                            <li>PA</li>
+                            <li>PB</li>
+                            <li>PR</li>
+                            <li>PE</li>
+                            <li>PI</li>
+                            <li>RJ</li>
+                            <li>RN</li>
+                            <li>RS</li>
+                            <li>RO</li>
+                            <li>RR</li>
+                            <li>SC</li>
+                            <li>SP</li>
+                            <li>SE</li>
+                            <li>TO</li>
+                        </ul>
+                        <div id="infoPizzaDir">
+                            <p id="totalVagas"></p>
+                            <p id="mediaEstados"></p>
+                        </div>
+                    </div>
+
+                    <div class="visu" id="mediaDiv">
+                        <p id="tituloMedia">Mairoes Médias de Salário</p>
+
+                        <canvas id="mediaCanvas" data-processing-sources="assets/pde/media/media.pde"></canvas>
+                        <script>
+                            var canvasSizeMedia = 600;
+                            var topEstados = new Array();
+                            var topMedias = new Array();
+
+                            function setMediaNacional(media) {
+                                $("#mediaNacionalNum").text("R$" + media);
+                            }
+
+                            function setLimits(max, media, min) {
+                                var minAux = parseFloat(min);
+                                var mediaAux = parseFloat(media);
+                                var valMin = mediaAux + minAux;
+                                $("#escalaMax").text("R$" + max);
+                                $("#escalaMin").text("R$" + valMin.toFixed(2));
+                            }
+
+                            function setBarValues(values, media) {
+                                for (var i = 0; i < 5; i++) {
+                                    var pos = 350 - ((190 * ((values[i] - media) / (values[0] - media))) + 60);
+                                    $("#estadosMedia p:eq(" + i + ")").text("R$" + values[i]).css({
+                                        top: pos
+                                    });
+                                }
+                            }
+
+                            function setBarNames(names) {
+                                for (var i = 0; i < 5; i++) {
+                                    $("#topEstados li:eq(" + i + ")").text(estadosArray[names[i]]);
+                                }
+                            }
+
+                        </script>
+                        <p id="mediaNacional">Média Nacional</p>
+                        <p id="mediaNacionalNum"></p>
+                        <p id="escalaMax"></p>
+                        <p id="escalaMin"></p>
+                        <ul id="topEstados">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div id="estadosMedia">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer id="footer">
+                    <span class="copyright">&copy; CrawlerJobs® 2015 Humberto Vieira, Mario de Castro, Paulo Henrique Leite. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+                </footer>
+
+            </div>
+        </div>
+
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script>
+            window.onload = function() { document.body.className = ''; }
+            window.ontouchmove = function() { return false; }
+            window.onorientationchange = function() { document.body.scrollTop = 0; }
+        </script>
+    </body>
+</html>

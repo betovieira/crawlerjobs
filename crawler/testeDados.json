@@ -1,0 +1,322 @@
+[
+    {
+        "titulo": "Barman Para Botafogo E Jardim Botanico",
+        "jornada": "Noturno",
+        "empresa": "Entretapas",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.800,00 a R$ 2.300,00 (Bruto mensal)",
+        "localidade": " Rio de Janeiro, RJ",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Alimentação / Gastronomia - Atendente / Recepção / Garçom"
+  },
+    {
+        "titulo": "Vendedora Interna - Santana De Parnaíba",
+        "jornada": "Período Integral",
+        "empresa": "HELIODIN DO BRASIL",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.026,00 a R$ 2.000,00 (Bruto mensal)",
+        "localidade": " Santana de Parnaíba, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Venda Interna "
+  },
+    {
+        "titulo": "Ajudantes De Cozinha Industrial - Barueri, Centro (Sp),Cotia,Santana Parnaíba  E Sto Amaro",
+        "jornada": "Período Integral",
+        "empresa": "Intermund rh",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Fundamental (1º grau)",
+        "tags": "Área e especialização profissional: Alimentação / Gastronomia - Cozinha"
+  },
+    {
+        "titulo": "Atendimento Ao Cliente - Rio De Janeiro",
+        "jornada": "Parcial tardes",
+        "empresa": "ATENTO BRASIL. (M)",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 788,00 (Bruto mensal)",
+        "localidade": " Rio de Janeiro, RJ",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Receptivo"
+  },
+    {
+        "titulo": "Agente De Relacionamento E Vendas Chat - Centro Sp",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 800,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Vendedor(A) - Shopping Downtown",
+        "jornada": "Noturno",
+        "empresa": "JAMF",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " Rio de Janeiro, RJ",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Lojas / Shopping"
+  },
+    {
+        "titulo": "Telemarketing Cobrança Massificados - Metrô Belém",
+        "jornada": "Período Integral",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 800,00 a R$ 2.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Cobrança"
+  },
+    {
+        "titulo": "Garçom - Hamburgueria",
+        "jornada": "Parcial noites",
+        "empresa": "LUIZ GUSTAVO RODRIGUES DE FRE...",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.100,00 a R$ 1.400,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Alimentação / Gastronomia - Atendente / Recepção / Garçom"
+  },
+    {
+        "titulo": "Consultor Receptivo & Ativo Consignado - Aprovação Amanhã!",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 892,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Receptivo"
+  },
+    {
+        "titulo": "Desenvolvedor Front-End",
+        "jornada": "Período Integral",
+        "empresa": "VOLLUP SERVICOS DE INFORMATIC...",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Superior",
+        "tags": "Área e especialização profissional: Informática, TI, Telecomunicações - Programador / Desenvolvedor"
+  },
+    {
+        "titulo": "Analista De Relacionamento - Programas De Descontos - Paulista",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 800,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Migração De Planos & Vendas - Manhã E Tarde - Aprovação Amanhã!",
+        "jornada": "Parcial manhãs",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.200,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Receptivo"
+  },
+    {
+        "titulo": "Operador De Telemarketing - Vendas - Barra Funda",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 892,00 a R$ 1.200,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Assistente De Qualidade De Campo",
+        "jornada": "Período Integral",
+        "empresa": "Gi Group",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.500,00 a R$ 1.600,00 (Bruto mensal)",
+        "localidade": " Manaus, AM",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Superior",
+        "tags": "Área e especialização profissional: Ciências, Pesquisa  - Pesquisa, Desenvolvimento"
+  },
+    {
+        "titulo": "Assistente Comercial Externo - Alphaville",
+        "jornada": "Período Integral",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Autônomo",
+        "salario": "R$ 2.000,00 a R$ 5.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Venda Externa"
+  },
+    {
+        "titulo": "Telemarketing Crédito Pessoal - Centro Sp",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 892,00 a R$ 1.200,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Trabalhe Direto Com A Construtora",
+        "jornada": "Parcial tardes",
+        "empresa": "EZ-TEC",
+        "tipoContrato": "Autônomo",
+        "salario": "R$ 7.000,00 a R$ 15.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Corretagem "
+  },
+    {
+        "titulo": "Assistente Administrativo",
+        "jornada": "Período Integral",
+        "empresa": "RESOLVE CONSULTORIA E DESENVO...",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " Rio de Janeiro, RJ",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Superior",
+        "tags": "Área e especialização profissional: Administração - Administração Geral"
+  },
+    {
+        "titulo": "Analista De Controladoria - Poa",
+        "jornada": "Período Integral",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 3.400,00 a R$ 3.500,00 (Bruto mensal)",
+        "localidade": " Porto Alegre, RS",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Superior",
+        "tags": "Área e especialização profissional: Contábil, Finanças, Economia - Controladoria"
+  },
+    {
+        "titulo": "Call Center - Vendas",
+        "jornada": "Parcial manhãs",
+        "empresa": "Grupo Cetefe",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.060,00 (Bruto mensal)",
+        "localidade": " Curitiba, PR",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Tlmk De Vendas - Barra Funda",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 892,00 a R$ 1.200,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Ativo"
+  },
+    {
+        "titulo": "Coordenador De Cobrança",
+        "jornada": "Período Integral",
+        "empresa": "PORTINHO ADVOGADOS ASSOCIADOS",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " Vinhedo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Superior",
+        "tags": "Área e especialização profissional: Telemarketing - Cobrança"
+  },
+    {
+        "titulo": "Auxiliar De Coordenação Pedagógica - São José Dos Campos, Sp",
+        "jornada": "Período Integral",
+        "empresa": "Instituto acelerado de Ensino",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 800,00 a R$ 1.100,00 (Bruto mensal)",
+        "localidade": " São José dos Campos, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Educação, Ensino, Idiomas  - Administração Escolar, Pedagogia"
+  },
+    {
+        "titulo": "Assistente Em Vendas De Loja - Material Médico Hopitalar - Tijuca",
+        "jornada": "Período Integral",
+        "empresa": "Prosperar Brasil",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 950,00 a R$ 1.100,00 (Bruto mensal)",
+        "localidade": " Rio de Janeiro, RJ",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Lojas / Shopping"
+  },
+    {
+        "titulo": "Secret.Imobiliária Min.A Exp.Residir No Pq.Nações S.Andre Enviar Cv",
+        "jornada": "Período Integral",
+        "empresa": "ESCRITORIO ALFA",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 900,00 a R$ 1.100,00 (Bruto mensal)",
+        "localidade": " Santo André, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Administração - Administração Geral"
+  },
+    {
+        "titulo": "Promotor De Homecenter - Goiania",
+        "jornada": "Período Integral",
+        "empresa": "ABILITY COMUNICAÇÃO INTEGRADA",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.075,00 (Bruto mensal)",
+        "localidade": " Recife, PE",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Demonstrador / Promotor"
+  },
+    {
+        "titulo": "Corretor De Imóveis Diversas Regiões De Sp E Grande Sp",
+        "jornada": "Período Integral",
+        "empresa": "EZ-TEC",
+        "tipoContrato": "Autônomo",
+        "salario": "R$ 7.000,00 a R$ 15.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Corretagem "
+  },
+    {
+        "titulo": "Meio Oficial De Cozinha Industrial - Barueri, Centro Santana Do Parnaíba",
+        "jornada": "Período Integral",
+        "empresa": "Intermund rh",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "A combinar",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Fundamental (1º grau)",
+        "tags": "Área e especialização profissional: Alimentação / Gastronomia - Cozinha"
+  },
+    {
+        "titulo": "Migração De Planos & Vendas - Turno Manhã - Aprovação Amanhã!",
+        "jornada": "Parcial manhãs",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Efetivo – CLT",
+        "salario": "R$ 1.200,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Telemarketing - Telemarketing / Call Center Receptivo"
+  },
+    {
+        "titulo": "Assistente Comercial Externo - Alphaville",
+        "jornada": "Período Integral",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Autônomo",
+        "salario": "R$ 2.000,00 a R$ 5.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Venda Externa"
+  },
+    {
+        "titulo": "Auxiliar De Limpeza - Para Morumbi",
+        "jornada": "Parcial tardes",
+        "empresa": "LUANDRE SERVICOS TEMPORARIOS....",
+        "tipoContrato": "Temporário",
+        "salario": "R$ 1.115,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Fundamental (1º grau)",
+        "tags": "Área e especialização profissional: Serviços Gerais - Limpeza"
+  },
+    {
+        "titulo": "Corretor(A) De Imóveis S/ Experiência - Período Manhã - Tarde Ou Noite - Zona Leste - Zona Norte - Zona Oeste - Zona Sul",
+        "jornada": "Parcial tardes",
+        "empresa": "Empresa com nome confidencial",
+        "tipoContrato": "Autônomo",
+        "salario": "R$ 5.500,00 a R$ 14.000,00 (Bruto mensal)",
+        "localidade": " São Paulo, SP",
+        "grauEscolaridade": "Escolaridade Mínima: Ensino Médio (2º Grau)",
+        "tags": "Área e especialização profissional: Comercial, Vendas - Corretagem "
+  }
+]
